@@ -1,0 +1,6 @@
+name: BlockOperationModifier
+version: ${project.version}
+main: io.github.nosequel.modifier.BlockOperationModifierPlugin
+authors: [ NoSQL, NV6 ]
+description: A plugin which modifies the speed of certain block operations
+website: github.com/NoSequel
