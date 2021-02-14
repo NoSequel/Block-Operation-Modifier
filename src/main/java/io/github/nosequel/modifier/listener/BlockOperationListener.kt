@@ -8,9 +8,7 @@ import org.bukkit.event.Listener
 import org.bukkit.event.block.Action
 import org.bukkit.event.player.PlayerInteractEvent
 
-class BlockOperationListener constructor(plugin: BlockOperationModifierPlugin) : Listener {
-
-    private val handler: BlockOperationHandler = plugin.handler;
+class BlockOperationListener constructor(private val handler: BlockOperationHandler) : Listener {
 
     @EventHandler
     fun onInteract(event: PlayerInteractEvent) {

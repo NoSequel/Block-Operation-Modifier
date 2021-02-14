@@ -9,8 +9,9 @@ class BlockOperationModifierPlugin : JavaPlugin() {
     val handler = BlockOperationHandler()
 
     override fun onEnable() {
-        saveDefaultConfig()
-        Bukkit.getPluginManager().registerEvents(BlockOperationListener(this), this)
+        this.saveDefaultConfig()
+
+        Bukkit.getPluginManager().registerEvents(BlockOperationListener(this.handler), this)
         Bukkit.getScheduler().runTaskTimer(this, BlockOperationRunnable(this), 0L, 4L)
     }
 }

@@ -9,7 +9,7 @@ import java.util.stream.Stream
 class BlockOperationHandler {
 
     private val modifiers: MutableSet<BlockOperationModifier> = HashSet()
-    private val operations: Set<BlockOperation<*>> = HashSet<BlockOperation<*>>(Arrays.asList(
+    private val operations: Set<BlockOperation<*>> = HashSet<BlockOperation<*>>(listOf(
             BrewingStandBlockOperation(),
             FurnaceBlockOperation()
     ))
