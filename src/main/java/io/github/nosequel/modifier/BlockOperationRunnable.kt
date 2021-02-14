@@ -4,7 +4,7 @@ import org.bukkit.scheduler.BukkitRunnable
 
 class BlockOperationRunnable(plugin: BlockOperationModifierPlugin) : BukkitRunnable() {
 
-    private val handler = plugin.handler;
+    private val handler = plugin.handler
     private val duration = plugin.config.getInt("modifier_speed")
 
     override fun run() {

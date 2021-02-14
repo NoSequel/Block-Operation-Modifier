@@ -2,7 +2,6 @@ package io.github.nosequel.modifier.listener
 
 import io.github.nosequel.modifier.BlockOperation
 import io.github.nosequel.modifier.BlockOperationHandler
-import io.github.nosequel.modifier.BlockOperationModifierPlugin
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.block.Action

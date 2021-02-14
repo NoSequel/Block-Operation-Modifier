@@ -12,6 +12,6 @@ class BlockOperationModifierPlugin : JavaPlugin() {
         this.saveDefaultConfig()
 
         Bukkit.getPluginManager().registerEvents(BlockOperationListener(this.handler), this)
-        Bukkit.getScheduler().runTaskTimer(this, BlockOperationRunnable(this), 0L, 4L)
+        BlockOperationRunnable(this).runTaskTimer(this, 0L, 4L)
     }
 }

@@ -5,6 +5,7 @@ import org.bukkit.block.BlockState
 import org.bukkit.block.Furnace
 
 class FurnaceBlockOperation : BlockOperation<Furnace> {
+
     override fun editTimeCasted(state: BlockState?, duration: Int): Boolean {
         return editTime(cast(state), duration)
     }
